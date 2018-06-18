@@ -1,0 +1,31 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <title>Task7</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    function randomInteger(min, max) {
+      var number = min - 0.5 + Math.random() * (max - min + 1)
+      number = Math.round(number);
+      return number;
+    }
+
+    var arr = ["Alex", "Leo", "Max", "Martin"];
+
+    function printRandomValueFromArray(array) {
+      var randomIndex = randomInteger(0, array.length - 1);
+      console.log(array[randomIndex]);
+    }
+
+    function main() {
+      printRandomValueFromArray(arr);
+    }
+
+    main();
+  </script>
+</body>
+
+</html>

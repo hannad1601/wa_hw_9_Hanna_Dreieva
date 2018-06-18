@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <title>Task6</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    var numbers = [];
+    var index = 0;
+   function sumArray(array) {
+     var sum = 0;
+     for (var i = 0; i < array.length; i++) {
+       sum += array[i];
+     }
+    return sum;
+   }
+    function main() {
+      while (true) {
+        var value =  parseInt(prompt("Enter value", ""));
+        if (value == "" || !Number.isInteger(value) || value == null ){
+          break;
+        }
+        numbers[index] = value;
+        console.log(numbers);
+        index++;
+      }
+
+    }
+    main();
+    console.log(sumArray(numbers));
+  </script>
+</body>
+
+</html>

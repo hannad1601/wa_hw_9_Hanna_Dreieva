@@ -1,0 +1,30 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <title>Task6</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    function muliplyNumeric(object) {
+      for (var a in object) {
+        var value = object[a];
+        if (Number.isInteger(value)) {
+          object[a] = value * 2;
+        }
+      }
+
+      function test() {
+        var testObject = {
+          "heigth": 100,
+          "width:": 200,
+          "name": "test"
+        };
+        muliplyNumeric(testObject);
+      }
+      test();
+  </script>
+</body>
+
+</html>

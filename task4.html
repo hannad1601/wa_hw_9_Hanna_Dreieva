@@ -1,0 +1,35 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <title>Task4</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    var salaries = {
+      "John": 400,
+      "Jack": 20000,
+      "test": "asdasdasd"
+    };
+
+    function sum (salaries) {
+      var sum = 0;
+      for (var key in salaries) {
+        var value = salaries[key];
+        if (Number.isInteger(value)) {
+          sum += value;
+        }
+      }
+      return sum;
+    }
+
+    function test() {
+      console.log(sum(salaries));
+    }
+
+    test();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <title>Task4</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+  var salaries = {
+    "John": 400,
+    "Jack": 20000,
+    "Nick": 12000,
+    "Leo": 30000,
+    "test": "asdasdasd"
+  };
+
+  function findMaxSalary(salaries) {
+    var max = 0;
+    var maxName = "";
+    for (var name in salaries) {
+      if (max < salaries[name]) {
+        max = salaries[name];
+        maxName = name;
+      }
+    }
+    return maxName;
+  }
+
+  function test() {
+    console.log(findMaxSalary(salaries));
+  }
+
+  test();
+  </script>
+</body>
+</html>

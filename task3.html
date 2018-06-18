@@ -1,0 +1,27 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <title>Task3</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    function isEmpty(obj) {
+      for (var key in obj) {
+        return false;
+      }
+      return true;
+    }
+
+    function test () {
+      var name = {};
+      console.log(isEmpty(name));
+      name["8:30"] = "подъём";
+      console.log(isEmpty(name));
+    }
+    test();
+  </script>
+</body>
+
+</html>
